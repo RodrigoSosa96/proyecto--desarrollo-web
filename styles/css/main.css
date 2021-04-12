@@ -179,6 +179,10 @@ header div.icon--responsive svg {
     height: 25px;
   }
 }
+body {
+  background-color: #171B1F;
+}
+
 body.inicio {
   background-image: url(../../../img/vinos/kym-ellis-aF1NPSnDQLw-unsplash.jpg);
   background-size: 100vw;
