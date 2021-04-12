@@ -1,0 +1,103 @@
+/*Menu----cortar en 940*/
+.nav__menu{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+    gap: 30px;
+    top: 30px;
+    right: 20px;
+    height: fit-content;
+    width: fit-content;
+    float: right;
+    border: 1px solid black;
+    z-index: 9;
+    background-color: #085BBA;
+
+}
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: $naranja-main;
+    width: 130px;
+    height: 37px;
+    box-shadow: #085BBA;
+
+    .menu__text{
+        justify-content: center;
+        align-self: center;
+        font-family: $menu-font;
+        font-size: 2em;
+        color: white;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.644);
+        
+
+    }
+
+    .menu__text--small{
+        font-size: 1.2em;
+    }
+    .menu__text--meddium{
+        font-size: 1.5em;
+    }
+}
+.menu::before{
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    width: 125px;
+    height: 32px;
+    border: 3px solid $azul-main;
+    z-index: -1;  //decidir por sombras
+}
+
+
+//uno por cada pagina (usar variable)
+
+.menu .menu__text--line-through{
+    text-decoration-line: line-through;
+}
+
+//Responsive-- media query
+
+@media only screen and (max-width: 1000px){
+    .nav__menu{
+        gap: 10px;
+        height: fit-content;
+        width: fit-content;
+    }
+    .menu{
+        width: 80px;
+        height: 30px;
+        box-shadow: #085BBA;
+    
+        .menu__text{
+            justify-content: center;
+            align-self: center;
+            font-family: $menu-font;
+            font-size: 1.5em;
+            color: white;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.644);
+            
+    
+        }
+    
+        .menu__text--small{
+            font-size: 0.7em;
+        }
+        .menu__text--meddium{
+            font-size: 1em;
+        }
+    }
+    .menu::before{
+        content: "";
+        position: absolute;
+        right: 5px;
+        top: 3px;
+        width: 75px;
+        height: 25px;
+    }
+}

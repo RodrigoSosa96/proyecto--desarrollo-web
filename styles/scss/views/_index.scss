@@ -1,0 +1,95 @@
+body.inicio{
+    background-image: url(../../../img/vinos/kym-ellis-aF1NPSnDQLw-unsplash.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-color:#171B1F;
+}
+
+main.inicio{
+    margin-top: 130vh;
+    h3{
+        font-size: 3em;
+        padding-left: 3em;
+        margin-bottom: 1em;
+        color: white;
+        font-family: $font-title;
+    }
+
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .grid-container {
+        background-color: white;
+        width: 75%;
+        padding: 50px;
+        margin-left: auto; 
+        margin-right: auto;       
+        margin-bottom: 10vh;
+        position: relative;
+        display: grid;
+        grid-template-columns: 40% 20% 40%;
+        grid-template-rows: 220px 353px 220px 353px 220px;
+        gap: 10px 10px;
+        grid-template-areas:
+        "quote--one img--one img--one"
+        "img--two img--one img--one"
+        "img--three img--three quote--two"
+        "img--three img--three img--four"
+        "quote--three quote--three img--four";
+    }
+    .box{
+        background-color: #B5B5B5;
+        position: relative;
+        display: flex;
+        align-items: center;
+        p{
+            font-size: 2em;
+            
+        }
+
+    }
+    .box::before{
+        content: "";
+        position: absolute;
+        right: 5px;
+        top: 3px;
+        width: 100%;
+        height: 100%;
+        border: 3px solid $azul-main;
+    }
+    .box--img{
+        filter: drop-shadow(-10px 10px 9px rgba(0, 0, 0, 0.75));
+    }
+    .quote--one {
+        grid-area: quote--one;
+
+    }
+    .img--one {
+        grid-area: img--one;
+
+    }
+    .img--two {
+        grid-area: img--two;
+    
+    }
+    .img--three {
+        grid-area: img--three;
+    
+    }
+    .quote--two {
+        grid-area: quote--two;
+    
+    }
+    .img--four{
+        grid-area: img--four;
+
+    }
+    .quote-three{
+        grid-area: quote--three;
+        grid-column-start: span 2
+    }
+
+}
+

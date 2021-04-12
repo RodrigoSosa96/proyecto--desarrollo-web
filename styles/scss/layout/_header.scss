@@ -1,0 +1,87 @@
+/*Header*/
+header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    align-items: center;
+}
+
+div.titulo{
+    position: relative;
+    display: flex;
+    margin-left: 10px;
+    h1{
+        position: relative;
+        top: 5px;
+        left: 0.2em;
+        font-size: 3em;
+        font-family: $font-title;
+        font-style: normal;
+        font-weight: normal;
+        color: rgb(0, 0, 0);
+    }
+    svg{
+        position: absolute;
+        width: 22.5em;
+        height: 70px;
+        top: 0;
+    }
+
+}
+header div.icon--responsive{
+    position: relative;
+    margin-left: 30px;
+    margin-top: 0px;
+}
+header div.icon--responsive svg{
+    align-self: center;
+    width: 4em;
+}
+
+
+//Responsive-- media query
+@media only screen and (max-width: 1280px){
+    header{
+        position: relative;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        align-items: center;
+    }
+    div.titulo{
+        h1{
+            top: 10px;
+        }
+        svg{
+            position: absolute;
+            top: 5px;
+            width: 22.5em;
+        }
+    }
+    
+    header div.icon--responsive{
+        margin-top: initial;
+        margin-left: initial;
+        position: fixed;
+        height: fit-content;
+        width: fit-content;
+        right: 20px;
+        bottom: 20px;    
+    }
+    header div.icon--responsive svg{
+        display: block;
+        position: relative;
+        align-self: flex-end;
+
+        width: 30px;
+        
+    }
+}

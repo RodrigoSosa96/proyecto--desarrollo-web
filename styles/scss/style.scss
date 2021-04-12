@@ -1,0 +1,27 @@
+//base del codigo
+
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+
+
+//Componentes
+@import 'components/buttons';
+@import 'components/masonry';
+
+//Partes del sitio
+
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/main';
+@import 'layout/footer';
+
+
+//secciones de la pagina
+
+@import 'views/contacto';
+@import 'views/index';
+@import 'views/nuestras-bodegas';
+@import 'views/quienes-somos';
+@import 'views/tienda';

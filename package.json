@@ -1,0 +1,17 @@
+{
+  "name": "cuartaentraga-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass styles/scss/style.scss styles/css/main.css" ,
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Rodrigo Sosa",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "sass": "^1.32.8"
+  }
+}
