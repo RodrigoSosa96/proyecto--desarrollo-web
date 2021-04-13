@@ -1,11 +1,11 @@
-body.inicio{
+body#inicio{
     background-image: url('../../../img/vinos/kym-ellis-aF1NPSnDQLw-unsplash.jpg');
     background-size: 100vw;
     background-repeat: no-repeat;
     background-color:#171B1F;
-}
 
-main.inicio{
+
+main{
     margin-top: 130vh;
     h3{
         font-size: 3em;
@@ -92,4 +92,4 @@ main.inicio{
     }
 
 }
-
+}//close body tag

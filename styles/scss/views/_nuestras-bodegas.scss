@@ -1,8 +1,7 @@
+//Nuestras bodegas
+body#bodegas{
 
-main#id 
-
-
-main.bodegas{
+main{
     display: flex;
     justify-content:center;
     position: relative;
@@ -17,8 +16,11 @@ main.bodegas{
         max-width: 90%;
         margin-top: 100px;
         flex-direction: column;
+        align-self: center;
         gap: 5px;
         margin-top: 20px;
+        background-color: aliceblue;
+        padding: 15px 10px 5px 10px;
         .texto{
             position: relative;
             display: flex;
@@ -47,3 +49,4 @@ main.bodegas{
 
     }
 }
+}//close body

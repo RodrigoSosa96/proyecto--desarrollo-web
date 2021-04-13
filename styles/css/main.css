@@ -7,6 +7,11 @@
   text-decoration: none;
 }
 
+.printers {
+  color: #bc2e1e;
+  text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.4);
+}
+
 /*Header*/
 header {
   position: relative;
@@ -183,29 +188,28 @@ body {
   background-color: #171B1F;
 }
 
-body.inicio {
+body#inicio {
   background-image: url("../../../img/vinos/kym-ellis-aF1NPSnDQLw-unsplash.jpg");
   background-size: 100vw;
   background-repeat: no-repeat;
   background-color: #171B1F;
 }
-
-main.inicio {
+body#inicio main {
   margin-top: 130vh;
 }
-main.inicio h3 {
+body#inicio main h3 {
   font-size: 3em;
   padding-left: 3em;
   margin-bottom: 1em;
   color: white;
   font-family: "Cinzel Decorative", cursive;
 }
-main.inicio img {
+body#inicio main img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-main.inicio .grid-container {
+body#inicio main .grid-container {
   background-color: white;
   width: 75%;
   padding: 50px;
@@ -219,16 +223,16 @@ main.inicio .grid-container {
   gap: 10px 10px;
   grid-template-areas: "quote--one img--one img--one" "img--two img--one img--one" "img--three img--three quote--two" "img--three img--three img--four" "quote--three quote--three img--four";
 }
-main.inicio .box {
+body#inicio main .box {
   background-color: #B5B5B5;
   position: relative;
   display: flex;
   align-items: center;
 }
-main.inicio .box p {
+body#inicio main .box p {
   font-size: 2em;
 }
-main.inicio .box::before {
+body#inicio main .box::before {
   content: "";
   position: absolute;
   right: 5px;
@@ -237,33 +241,33 @@ main.inicio .box::before {
   height: 100%;
   border: 3px solid #085BBA;
 }
-main.inicio .box--img {
+body#inicio main .box--img {
   filter: drop-shadow(-10px 10px 9px rgba(0, 0, 0, 0.75));
 }
-main.inicio .quote--one {
+body#inicio main .quote--one {
   grid-area: quote--one;
 }
-main.inicio .img--one {
+body#inicio main .img--one {
   grid-area: img--one;
 }
-main.inicio .img--two {
+body#inicio main .img--two {
   grid-area: img--two;
 }
-main.inicio .img--three {
+body#inicio main .img--three {
   grid-area: img--three;
 }
-main.inicio .quote--two {
+body#inicio main .quote--two {
   grid-area: quote--two;
 }
-main.inicio .img--four {
+body#inicio main .img--four {
   grid-area: img--four;
 }
-main.inicio .quote-three {
+body#inicio main .quote-three {
   grid-area: quote--three;
   grid-column-start: span 2;
 }
 
-main#id main.bodegas {
+body#bodegas main {
   display: flex;
   justify-content: center;
   position: relative;
@@ -272,16 +276,19 @@ main#id main.bodegas {
   gap: 50px;
   flex-direction: column;
 }
-main#id main.bodegas article {
+body#bodegas main article {
   display: flex;
   position: relative;
   max-width: 90%;
   margin-top: 100px;
   flex-direction: column;
+  align-self: center;
   gap: 5px;
   margin-top: 20px;
+  background-color: aliceblue;
+  padding: 15px 10px 5px 10px;
 }
-main#id main.bodegas article .texto {
+body#bodegas main article .texto {
   position: relative;
   display: flex;
   width: 60vw;
@@ -290,14 +297,14 @@ main#id main.bodegas article .texto {
   align-self: center;
   flex-direction: column;
 }
-main#id main.bodegas article h2 {
+body#bodegas main article h2 {
   font-size: 3em;
   margin-bottom: 10px;
 }
-main#id main.bodegas article p {
+body#bodegas main article p {
   font-size: 1.7em;
 }
-main#id main.bodegas article img {
+body#bodegas main article img {
   position: relative;
   width: 60vw;
   align-self: center;
