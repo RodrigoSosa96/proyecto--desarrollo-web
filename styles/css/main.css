@@ -184,7 +184,7 @@ body {
 }
 
 body.inicio {
-  background-image: url(../../../img/vinos/kym-ellis-aF1NPSnDQLw-unsplash.jpg);
+  background-image: url("../../../img/vinos/kym-ellis-aF1NPSnDQLw-unsplash.jpg");
   background-size: 100vw;
   background-repeat: no-repeat;
   background-color: #171B1F;
