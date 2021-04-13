@@ -32,6 +32,7 @@ div.titulo h1 {
   left: 0.2em;
   font-size: 3em;
   font-family: "Cinzel Decorative", cursive;
+  stroke-width: 1;
   font-style: normal;
   font-weight: normal;
   color: black;
@@ -41,6 +42,10 @@ div.titulo svg {
   width: 22.5em;
   height: 70px;
   top: 0;
+}
+div.titulo svg:hover path {
+  stroke-width: 3;
+  stroke: #060422;
 }
 
 header div.icon--responsive {
@@ -311,19 +316,17 @@ body#bodegas main article img {
   object-fit: cover;
 }
 
-main.who img {
+body#who main.who img {
   width: 100vw;
   object-fit: cover;
 }
-
-main.who p {
+body#who main.who p {
   margin-top: 30px;
   font-family: "Josefin Sans", sans-serif;
   font-size: 2em;
   letter-spacing: 0.08rem;
 }
-
-main.who {
+body#who main.who {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -333,8 +336,7 @@ main.who {
   justify-content: center;
   align-items: center;
 }
-
-article.caja {
+body#who article.caja {
   display: flex;
   position: relative;
   max-width: 90%;
@@ -344,24 +346,23 @@ article.caja {
   gap: 10px;
   margin-top: 20px;
 }
-article.caja .caja__img {
+body#who article.caja .caja__img {
   position: relative;
   width: 36.5vw;
   height: 90vh;
   left: 62px;
 }
-article.caja .texto {
+body#who article.caja .texto {
   width: 50vw;
   position: relative;
   left: 100px;
 }
-article.caja .texto h2 {
+body#who article.caja .texto h2 {
   font-size: 3em;
   font-family: "Josefin Sans", sans-serif;
   text-decoration: underline;
 }
-
-article.caja--banner {
+body#who article.caja--banner {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -372,26 +373,22 @@ article.caja--banner {
   align-items: center;
   position: relative;
 }
-
-.img--banner {
+body#who .img--banner {
   position: relative;
   height: 460px;
   width: 90vw;
   align-self: center;
 }
-
-.img--shadow {
+body#who .img--shadow {
   filter: drop-shadow(-10px 10px 9px rgba(0, 0, 0, 0.75));
 }
-
-article.caja.caja--derecha {
+body#who article.caja.caja--derecha {
   flex-direction: row-reverse;
 }
-article.caja.caja--derecha .texto {
+body#who article.caja.caja--derecha .texto {
   margin-top: 20px;
   margin-right: 100px;
 }
-
 main.tienda {
   position: relative;
   display: flex;

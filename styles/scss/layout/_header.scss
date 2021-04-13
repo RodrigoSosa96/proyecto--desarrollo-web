@@ -17,6 +17,7 @@ div.titulo{
         left: 0.2em;
         font-size: 3em;
         font-family: $font-title;
+        stroke-width: 1;
         font-style: normal;
         font-weight: normal;
         color: rgb(0, 0, 0);
@@ -25,6 +26,11 @@ div.titulo{
         position: absolute;
         width: 22.5em;
         height: 70px;
+        &:hover path{
+            stroke-width: 3;
+            stroke:rgb(6, 4, 34);
+        }
+
         top: 0;
     }
 
