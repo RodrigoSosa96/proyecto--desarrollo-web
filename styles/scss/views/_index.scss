@@ -1,4 +1,5 @@
-body#inicio{
+body#inicio > div{
+    z-index: 10;
     background-image: url('../../../img/vinos/kym-ellis-aF1NPSnDQLw-unsplash.jpg');
     background-size: 100vw;
     background-repeat: no-repeat;
@@ -6,6 +7,7 @@ body#inicio{
 
 
 main{
+    
     margin-top: 130vh;
     h3{
         font-size: 3em;

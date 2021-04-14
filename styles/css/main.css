@@ -45,7 +45,7 @@ div.titulo svg {
 }
 div.titulo svg:hover path {
   stroke-width: 3;
-  stroke: #060422;
+  filter: brightness(150%);
 }
 
 header div.icon--responsive {
@@ -193,28 +193,46 @@ body {
   background-color: #171B1F;
 }
 
-body#inicio {
+footer.fixed-footer {
+  position: sticky;
+  bottom: 0;
+  z-index: -5;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background: #262626;
+  color: #666666;
+  font-size: 1.7em;
+}
+footer.fixed-footer img {
+  height: 50px;
+}
+
+body#inicio > div {
+  z-index: 10;
   background-image: url("../../../img/vinos/kym-ellis-aF1NPSnDQLw-unsplash.jpg");
   background-size: 100vw;
   background-repeat: no-repeat;
   background-color: #171B1F;
 }
-body#inicio main {
+body#inicio > div main {
   margin-top: 130vh;
 }
-body#inicio main h3 {
+body#inicio > div main h3 {
   font-size: 3em;
   padding-left: 3em;
   margin-bottom: 1em;
   color: white;
   font-family: "Cinzel Decorative", cursive;
 }
-body#inicio main img {
+body#inicio > div main img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-body#inicio main .grid-container {
+body#inicio > div main .grid-container {
   background-color: white;
   width: 75%;
   padding: 50px;
@@ -228,16 +246,16 @@ body#inicio main .grid-container {
   gap: 10px 10px;
   grid-template-areas: "quote--one img--one img--one" "img--two img--one img--one" "img--three img--three quote--two" "img--three img--three img--four" "quote--three quote--three img--four";
 }
-body#inicio main .box {
+body#inicio > div main .box {
   background-color: #B5B5B5;
   position: relative;
   display: flex;
   align-items: center;
 }
-body#inicio main .box p {
+body#inicio > div main .box p {
   font-size: 2em;
 }
-body#inicio main .box::before {
+body#inicio > div main .box::before {
   content: "";
   position: absolute;
   right: 5px;
@@ -246,28 +264,28 @@ body#inicio main .box::before {
   height: 100%;
   border: 3px solid #085BBA;
 }
-body#inicio main .box--img {
+body#inicio > div main .box--img {
   filter: drop-shadow(-10px 10px 9px rgba(0, 0, 0, 0.75));
 }
-body#inicio main .quote--one {
+body#inicio > div main .quote--one {
   grid-area: quote--one;
 }
-body#inicio main .img--one {
+body#inicio > div main .img--one {
   grid-area: img--one;
 }
-body#inicio main .img--two {
+body#inicio > div main .img--two {
   grid-area: img--two;
 }
-body#inicio main .img--three {
+body#inicio > div main .img--three {
   grid-area: img--three;
 }
-body#inicio main .quote--two {
+body#inicio > div main .quote--two {
   grid-area: quote--two;
 }
-body#inicio main .img--four {
+body#inicio > div main .img--four {
   grid-area: img--four;
 }
-body#inicio main .quote-three {
+body#inicio > div main .quote-three {
   grid-area: quote--three;
   grid-column-start: span 2;
 }
@@ -316,17 +334,17 @@ body#bodegas main article img {
   object-fit: cover;
 }
 
-body#who main.who img {
+body#who main img {
   width: 100vw;
   object-fit: cover;
 }
-body#who main.who p {
+body#who main p {
   margin-top: 30px;
   font-family: "Josefin Sans", sans-serif;
   font-size: 2em;
   letter-spacing: 0.08rem;
 }
-body#who main.who {
+body#who main {
   position: relative;
   display: flex;
   flex-direction: column;

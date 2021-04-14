@@ -3,18 +3,18 @@ body#who {
 
 //Quienes somos
 
-main.who img{
+main img {
     width: 100vw;
     object-fit: cover;
 
 }
-main.who p{
+main p {
     margin-top: 30px;
     font-family: $menu-font;
     font-size: 2em;
     letter-spacing: .08rem;
 }
-main.who{
+main {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@ main.who{
     justify-content: center;
     align-items: center;
 }
-article.caja{
+article.caja {
     display: flex;
     position: relative;
     max-width: 90%;
