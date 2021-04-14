@@ -444,8 +444,9 @@ main.tienda article a {
 }
 main.tienda article .text {
   opacity: 0.8;
-  position: absolute;
+  position: relative;
   margin: 30px 10px;
+  z-index: 10;
 }
 main.tienda article .text h2 {
   color: white;
@@ -459,7 +460,7 @@ main.tienda article .text span {
   color: white;
 }
 main.tienda article img.cajaTienda {
-  position: absolute;
+  position: relative;
   height: 100%;
   width: 100%;
   object-fit: cover;

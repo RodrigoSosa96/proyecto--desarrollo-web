@@ -46,8 +46,9 @@ main.tienda{
 
             opacity: 0.8;
     
-            position: absolute;
+            position: relative;
             margin: 30px 10px;
+            z-index: 10;
             h2{
                 color: white;
             }
@@ -62,7 +63,7 @@ main.tienda{
     
         }
         img.cajaTienda{
-            position: absolute;
+            position: relative; //oculta la imagen
             height: 100%;
             width: 100%;
             object-fit: cover;
