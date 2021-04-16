@@ -1,4 +1,3 @@
-@import 'components/flickity.css';
 * {
   margin: 0;
   padding: 0;
@@ -213,27 +212,28 @@ footer.fixed-footer img {
 
 body#inicio > div {
   z-index: 10;
-  background-image: url("../../../img/vinos/kym-ellis-aF1NPSnDQLw-unsplash.jpg");
+  background-image: url("../../img/vinos/kym-ellis-aF1NPSnDQLw-unsplash.jpg");
   background-size: 100vw;
   background-repeat: no-repeat;
   background-color: #171B1F;
 }
-body#inicio > div main {
+
+main {
   margin-top: 130vh;
 }
-body#inicio > div main h3 {
+main h3 {
   font-size: 3em;
   padding-left: 3em;
   margin-bottom: 1em;
   color: white;
   font-family: "Cinzel Decorative", cursive;
 }
-body#inicio > div main img {
+main img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-body#inicio > div main .grid-container {
+main .grid-container {
   background-color: white;
   width: 75%;
   padding: 50px;
@@ -247,16 +247,16 @@ body#inicio > div main .grid-container {
   gap: 10px 10px;
   grid-template-areas: "quote--one img--one img--one" "img--two img--one img--one" "img--three img--three quote--two" "img--three img--three img--four" "quote--three quote--three img--four";
 }
-body#inicio > div main .box {
+main .box {
   background-color: #B5B5B5;
   position: relative;
   display: flex;
   align-items: center;
 }
-body#inicio > div main .box p {
+main .box p {
   font-size: 2em;
 }
-body#inicio > div main .box::before {
+main .box::before {
   content: "";
   position: absolute;
   right: 5px;
@@ -265,60 +265,36 @@ body#inicio > div main .box::before {
   height: 100%;
   border: 3px solid #085BBA;
 }
-body#inicio > div main .box--img {
+main .box--img {
   filter: drop-shadow(-10px 10px 9px rgba(0, 0, 0, 0.75));
 }
-body#inicio > div main .quote--one {
+main .quote--one {
   grid-area: quote--one;
 }
-body#inicio > div main .img--one {
+main .img--one {
   grid-area: img--one;
 }
-body#inicio > div main .img--two {
+main .img--two {
   grid-area: img--two;
 }
-body#inicio > div main .img--three {
+main .img--three {
   grid-area: img--three;
 }
-body#inicio > div main .quote--two {
+main .quote--two {
   grid-area: quote--two;
 }
-body#inicio > div main .img--four {
+main .img--four {
   grid-area: img--four;
 }
-body#inicio > div main .quote-three {
+main .quote-three {
   grid-area: quote--three;
   grid-column-start: span 2;
 }
 
-/* external css: flickity.css */
-* {
-  box-sizing: border-box;
+.carousel-pruductos {
+  margin-top: 200vh;
 }
 
-body {
-  font-family: sans-serif;
-}
-
-.carousel {
-  background: #EEE;
-}
-
-.carousel-cell {
-  margin-right: 20px;
-  overflow: hidden;
-}
-
-.carousel-cell img {
-  display: block;
-  height: 200px;
-}
-
-@media screen and (min-width: 768px) {
-  .carousel-cell img {
-    height: 400px;
-  }
-}
 body#bodegas main {
   display: flex;
   justify-content: center;
