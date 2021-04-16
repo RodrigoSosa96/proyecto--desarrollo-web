@@ -8,9 +8,8 @@
 - CSS
 - SASS
 - [Node.js](#Node-script)
-
-    [Dart sass]()
-    [Daemon]
+    - [Dart sass](#)
+    - [Daemon](#)
 - GIT
 - Figma
 
