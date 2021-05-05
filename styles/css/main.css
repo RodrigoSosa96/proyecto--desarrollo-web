@@ -273,25 +273,24 @@ body#inicio > div {
   background-repeat: no-repeat;
   background-color: #171B1F;
 }
-
-main {
+body#inicio > div main {
   margin-top: 130vh;
 }
-main h3 {
+body#inicio > div main h3 {
   font-size: 3em;
   padding-left: 3em;
   margin-bottom: 1em;
   color: white;
   font-family: "Cinzel Decorative", cursive;
 }
-main img {
+body#inicio > div main img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-main .grid-container {
+body#inicio > div main .grid-container {
   background-color: white;
-  width: 75%;
+  width: 1500px;
   padding: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -303,16 +302,16 @@ main .grid-container {
   gap: 10px 10px;
   grid-template-areas: "quote--one img--one img--one" "img--two img--one img--one" "img--three img--three quote--two" "img--three img--three img--four" "quote--three quote--three img--four";
 }
-main .box {
+body#inicio > div main .box {
   background-color: #B5B5B5;
   position: relative;
   display: flex;
   align-items: center;
 }
-main .box p {
+body#inicio > div main .box p {
   font-size: 2em;
 }
-main .box::before {
+body#inicio > div main .box::before {
   content: "";
   position: absolute;
   right: 5px;
@@ -321,36 +320,52 @@ main .box::before {
   height: 100%;
   border: 3px solid #085BBA;
 }
-main .box--img {
+body#inicio > div main .box--img {
   filter: drop-shadow(-10px 10px 9px rgba(0, 0, 0, 0.75));
 }
-main .quote--one {
+body#inicio > div main .quote--one {
   grid-area: quote--one;
 }
-main .img--one {
+body#inicio > div main .img--one {
   grid-area: img--one;
 }
-main .img--two {
+body#inicio > div main .img--two {
   grid-area: img--two;
 }
-main .img--three {
+body#inicio > div main .img--three {
   grid-area: img--three;
 }
-main .quote--two {
+body#inicio > div main .quote--two {
   grid-area: quote--two;
 }
-main .img--four {
+body#inicio > div main .img--four {
   grid-area: img--four;
 }
-main .quote-three {
+body#inicio > div main .quote-three {
   grid-area: quote--three;
   grid-column-start: span 2;
 }
-
-.carousel-pruductos {
+body#inicio > div .carousel-pruductos {
   margin-top: 200vh;
 }
 
+@media only screen and (max-width: 1600px) {
+  body#inicio div main .grid-container {
+    grid-template-rows: auto;
+    grid-template-areas: auto;
+    width: 95vw;
+  }
+  body#inicio div main .grid-container .box {
+    height: 30vw;
+  }
+  body#inicio div main .grid-container .box p {
+    font-size: 3vw;
+    margin: 10px 10px 10px 10px;
+  }
+  body#inicio div main .grid-container .box--img {
+    height: 30vw;
+  }
+}
 body#bodegas main {
   display: flex;
   justify-content: center;

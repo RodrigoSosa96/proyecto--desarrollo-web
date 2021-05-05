@@ -4,7 +4,6 @@ body#inicio > div{
     background-size: 100vw;
     background-repeat: no-repeat;
     background-color:#171B1F;
-}
 
 
 main{
@@ -25,7 +24,7 @@ main{
     }
     .grid-container {
         background-color: white;
-        width: 75%;
+        width: 1500px;
         padding: 50px;
         margin-left: auto; 
         margin-right: auto;       
@@ -98,4 +97,34 @@ main{
 
 .carousel-pruductos {
     margin-top: 200vh;
+}
+}
+
+@media only screen and (max-width: 1600px){
+    body#inicio{
+        div{
+
+            main{
+                .grid-container{
+                    grid-template-rows: auto;
+                    grid-template-areas: auto;
+
+                    width: 95vw;
+                    .box{
+                        height: 30vw;
+                        p {
+                            font-size: 3vw;
+                            margin: 10px 10px 10px 10px;
+                        }
+                    }
+                    .box--img{
+                        height: 30vw;
+                    }
+                }
+                
+            }
+            
+        }
+
+    }//body end
 }
