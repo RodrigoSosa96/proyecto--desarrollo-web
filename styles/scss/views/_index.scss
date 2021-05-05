@@ -1,9 +1,11 @@
 body#inicio > div{
     z-index: 10;
     background-image: url('../../img/vinos/kym-ellis-aF1NPSnDQLw-unsplash.jpg');
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    background-color:#171B1F;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    resize: both;
+    
 
 
 main{
@@ -98,18 +100,21 @@ main{
 .carousel-pruductos {
     margin-top: 200vh;
 }
-}
+}// close body
 
 @media only screen and (max-width: 1600px){
     body#inicio{
         div{
+
+
+
 
             main{
                 .grid-container{
                     grid-template-rows: auto;
                     grid-template-areas: auto;
 
-                    width: 95vw;
+                    width: 90vw;
                     .box{
                         height: 30vw;
                         p {
@@ -123,7 +128,6 @@ main{
                 }
                 
             }
-            
         }
 
     }//body end

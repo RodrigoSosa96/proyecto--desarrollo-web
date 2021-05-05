@@ -62,6 +62,7 @@ div.titulo svg:hover path {
 }
 
 .printers {
+  transition: 0.8s;
   text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.315);
 }
 
@@ -269,9 +270,10 @@ footer.fixed-footer img {
 body#inicio > div {
   z-index: 10;
   background-image: url("../../img/vinos/kym-ellis-aF1NPSnDQLw-unsplash.jpg");
-  background-size: 100vw;
-  background-repeat: no-repeat;
-  background-color: #171B1F;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  resize: both;
 }
 body#inicio > div main {
   margin-top: 130vh;
@@ -353,7 +355,7 @@ body#inicio > div .carousel-pruductos {
   body#inicio div main .grid-container {
     grid-template-rows: auto;
     grid-template-areas: auto;
-    width: 95vw;
+    width: 90vw;
   }
   body#inicio div main .grid-container .box {
     height: 30vw;
