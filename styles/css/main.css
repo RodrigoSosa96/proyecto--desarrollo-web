@@ -7,6 +7,24 @@
   text-decoration: none;
 }
 
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .printers {
   color: #bc2e1e;
   text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.4);
