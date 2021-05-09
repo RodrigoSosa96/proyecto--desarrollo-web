@@ -3,6 +3,18 @@ body#who {
 
 //Quienes somos
 
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 85px auto;
+    width: 85vw;
+    background-color: white;//temp
+    justify-content: center;
+}
 main img {
     width: 100vw;
     object-fit: cover;
@@ -13,16 +25,8 @@ main p {
     font-family: $menu-font;
     font-size: 2em;
     letter-spacing: .08rem;
-}
-main {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 85px;
-    justify-content: center;
-    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
 }
 article.caja {
     display: flex;
