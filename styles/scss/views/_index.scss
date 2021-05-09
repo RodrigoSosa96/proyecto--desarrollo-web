@@ -1,16 +1,16 @@
-body#inicio > div{
+body#inicio {
     z-index: 10;
     background-image: url('../../img/vinos/kym-ellis-aF1NPSnDQLw-unsplash.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
     resize: both;
+    background-repeat: no-repeat;
     
-
 
 main{
     
-    margin-top: 130vh;
+    margin-top: 100vh;
     h3{
         font-size: 3em;
         padding-left: 3em;
@@ -35,7 +35,7 @@ main{
         display: grid;
         grid-template-columns: 40% 20% 40%;
         grid-template-rows: 220px 353px 220px 353px 220px;
-        gap: 10px 10px;
+        gap: 12px 12px;
         grid-template-areas:
         "quote--one img--one img--one"
         "img--two img--one img--one"
@@ -49,7 +49,9 @@ main{
         display: flex;
         align-items: center;
         p{
-            font-size: 2em;
+            font-size: 1.6em;
+            padding-left: 20px;
+            padding-right: 20px;
             
         }
 
@@ -92,7 +94,7 @@ main{
     }
     .quote-three{
         grid-area: quote--three;
-        grid-column-start: span 2
+        grid-column-start: span 2;
     }
 
 }
@@ -104,31 +106,48 @@ main{
 
 @media only screen and (max-width: 1600px){
     body#inicio{
-        div{
 
 
 
 
             main{
                 .grid-container{
-                    grid-template-rows: auto;
-                    grid-template-areas: auto;
+                    grid-template-rows: auto auto auto;
+                    grid-template-areas:
+                    "quote--one img--two img--two"
+                    "img--one img--one img--one"
+                    "img--three img--three quote--two"
+                    "quote--three quote--three img--four"
+                    "quote--three quote--three img--four";
+
+
+                    //"quote--one img--one img--one"
+                    //"img--two img--one img--one"
+                    //"img--three img--three quote--two"
+                    //"img--three img--three img--four"
+                    //"quote--three quote--three img--four";
+
 
                     width: 90vw;
                     .box{
                         height: 30vw;
                         p {
-                            font-size: 3vw;
+                            font-size: 2.7vw;
                             margin: 10px 10px 10px 10px;
+                            padding-left: 3px;
+                            padding-right: 3px;
                         }
                     }
+                    .quote-three{
+                        
+                    }
+
                     .box--img{
                         height: 30vw;
                     }
                 }
                 
             }
-        }
 
     }//body end
 }

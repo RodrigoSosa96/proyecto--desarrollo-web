@@ -250,6 +250,29 @@ body {
   background-color: #171B1F;
 }
 
+html {
+  --scrollbarBG: #00000028;
+  --thumbBG: #90a4ae;
+}
+
+body::-webkit-scrollbar {
+  width: 9px;
+}
+
+body {
+  scrollbar-width: auto;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+}
+
 footer.fixed-footer {
   position: sticky;
   bottom: 0;
@@ -267,30 +290,31 @@ footer.fixed-footer img {
   height: 50px;
 }
 
-body#inicio > div {
+body#inicio {
   z-index: 10;
   background-image: url("../../img/vinos/kym-ellis-aF1NPSnDQLw-unsplash.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
   resize: both;
+  background-repeat: no-repeat;
 }
-body#inicio > div main {
-  margin-top: 130vh;
+body#inicio main {
+  margin-top: 100vh;
 }
-body#inicio > div main h3 {
+body#inicio main h3 {
   font-size: 3em;
   padding-left: 3em;
   margin-bottom: 1em;
   color: white;
   font-family: "Cinzel Decorative", cursive;
 }
-body#inicio > div main img {
+body#inicio main img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-body#inicio > div main .grid-container {
+body#inicio main .grid-container {
   background-color: white;
   width: 1500px;
   padding: 50px;
@@ -301,19 +325,21 @@ body#inicio > div main .grid-container {
   display: grid;
   grid-template-columns: 40% 20% 40%;
   grid-template-rows: 220px 353px 220px 353px 220px;
-  gap: 10px 10px;
+  gap: 12px 12px;
   grid-template-areas: "quote--one img--one img--one" "img--two img--one img--one" "img--three img--three quote--two" "img--three img--three img--four" "quote--three quote--three img--four";
 }
-body#inicio > div main .box {
+body#inicio main .box {
   background-color: #B5B5B5;
   position: relative;
   display: flex;
   align-items: center;
 }
-body#inicio > div main .box p {
-  font-size: 2em;
+body#inicio main .box p {
+  font-size: 1.6em;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-body#inicio > div main .box::before {
+body#inicio main .box::before {
   content: "";
   position: absolute;
   right: 5px;
@@ -322,49 +348,51 @@ body#inicio > div main .box::before {
   height: 100%;
   border: 3px solid #085BBA;
 }
-body#inicio > div main .box--img {
+body#inicio main .box--img {
   filter: drop-shadow(-10px 10px 9px rgba(0, 0, 0, 0.75));
 }
-body#inicio > div main .quote--one {
+body#inicio main .quote--one {
   grid-area: quote--one;
 }
-body#inicio > div main .img--one {
+body#inicio main .img--one {
   grid-area: img--one;
 }
-body#inicio > div main .img--two {
+body#inicio main .img--two {
   grid-area: img--two;
 }
-body#inicio > div main .img--three {
+body#inicio main .img--three {
   grid-area: img--three;
 }
-body#inicio > div main .quote--two {
+body#inicio main .quote--two {
   grid-area: quote--two;
 }
-body#inicio > div main .img--four {
+body#inicio main .img--four {
   grid-area: img--four;
 }
-body#inicio > div main .quote-three {
+body#inicio main .quote-three {
   grid-area: quote--three;
   grid-column-start: span 2;
 }
-body#inicio > div .carousel-pruductos {
+body#inicio .carousel-pruductos {
   margin-top: 200vh;
 }
 
 @media only screen and (max-width: 1600px) {
-  body#inicio div main .grid-container {
-    grid-template-rows: auto;
-    grid-template-areas: auto;
+  body#inicio main .grid-container {
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "quote--one img--two img--two" "img--one img--one img--one" "img--three img--three quote--two" "quote--three quote--three img--four" "quote--three quote--three img--four";
     width: 90vw;
   }
-  body#inicio div main .grid-container .box {
+  body#inicio main .grid-container .box {
     height: 30vw;
   }
-  body#inicio div main .grid-container .box p {
-    font-size: 3vw;
+  body#inicio main .grid-container .box p {
+    font-size: 2.7vw;
     margin: 10px 10px 10px 10px;
+    padding-left: 3px;
+    padding-right: 3px;
   }
-  body#inicio div main .grid-container .box--img {
+  body#inicio main .grid-container .box--img {
     height: 30vw;
   }
 }
