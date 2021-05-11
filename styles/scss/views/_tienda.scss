@@ -68,5 +68,33 @@ img {
     color: #040716;
 }
 
+.botonCarrito{
+    position: fixed;
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+    display: flex;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    border: 1px solid black;
+    width: 130px;
+    height: 40px;
+    border-radius: 51px;
+    justify-content:center;
+    align-items:center;
+    background-color: white;
+    filter: $box-shadow;
+    a{
+        font-family: $menu-font;
+        color: black;
+        font-size: 1.5em;
 
+    }
+    :active{
+        
+
+    }
+}
 
