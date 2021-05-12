@@ -69,12 +69,11 @@ img {
 }
 
 .botonCarrito{
-    position: fixed;
-    position: fixed;
+    position: sticky;
     right: 40px;
     bottom: 30px;
-    display: flex;
     float: right;
+    display: flex;
     margin-top: 20px;
     margin-bottom: 50px;
     margin-right: 50px;
@@ -93,7 +92,7 @@ img {
 
     }
     :active{
-        
+        transform: scale(1.1);
 
     }
 }

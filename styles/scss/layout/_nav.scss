@@ -5,7 +5,9 @@ nav {
     padding: 7px 15px 15px 45px;
     right: 0px;
     border-radius: 3px;
-    background-color: #576c8334;
+    background-color: $menu--transparente;
+    backdrop-filter: blur(4px);
+
     z-index: 100;
 }
 .nav__menu{

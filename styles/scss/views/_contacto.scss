@@ -1,6 +1,94 @@
 body#contacto{
-
-main{
+//contacto
+main {
+    margin-top: 4em;
+    .tarjeta--mapa {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        width: 80%;
+        margin: 0 auto;
+        padding:  0px 10px 3em 10px;
+        h2 {
+            position: relative;
+            margin-bottom: 5px;
+            font-size: 2.5em;
+            color: $background-secundario;
+            //border: 2px solid blue;
+            //padding: 10px 10px 10px 10px;
+            width: fit-content;
+            &::before {
+                content: " ";
+                position: absolute;
+                background-color: rgba(2, 27, 109, 0.445);
+                top: -0.5em;
+                left: -2em;
+                padding: 10px 10px 10px 10px;
+                width: 100%;
+                height: 100%;
+                z-index: -1000;
+            }
+        }
+    }
+    .descripcion--contacto {
+        width: 30%;
+        height: 288px;
+        margin-top: calc(2.5em + 5px);
+        margin-left: 50px;
+        border: 2px solid $background-secundario;
+        text-align: right;
+        padding-right: 20px;
+        position: relative;
+        p {
+            color: $background-secundario;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.2vw;
+            line-height: 200%;
+        }
+        &::before {
+            content: " ";
+            position: absolute;
+            background-color: rgba(2, 27, 109, 0.445);
+            top: -0.5em;
+            right: -2em;
+            padding: 10px 10px 10px 10px;
+            width: 90%;
+            height: 70%;
+            z-index: -1000;            
+        }
+    }
 
 }
+
+iframe {
+    height: clamp(70vh, 500px, 50vw) ;//funciona?
+    width: 50vw;
+
+}
+
+
+}//end
+
+@media only screen and (max-width: 1200px){
+    body#contacto{
+        main{
+            .tarjeta--mapa{
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                flex-wrap: wrap;
+                .mapa {
+
+                }
+
+
+        }
+
+        }
+        iframe {
+            width:min(90vw, 700px);
+            height: min(80vh, 50vw );
+        }
+    }
 }
